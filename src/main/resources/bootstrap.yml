@@ -1,6 +1,8 @@
 spring:
   application:
-    name: configurationschool
+    name: configuration-school
+  profiles:
+    active: development
 
 encrypt:
   key: 123456

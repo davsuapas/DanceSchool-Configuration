@@ -10,12 +10,3 @@ spring:
           force-pull: true
           username: DanceSchoolMicroservices
           password: DanceSchool8MS!
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
