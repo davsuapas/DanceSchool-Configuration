@@ -103,7 +103,8 @@
 						<configuration>
 							<serverId>${DOCKER_SERVER_ID}</serverId>
 							<registryUrl>${DOCKER_REGISTRY_URL}</registryUrl>
-							<imageName>${DOCKER_REGISTRY_ORGANIZATION}/${project.artifactId}</imageName>							<baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
+							<imageName>${DOCKER_REGISTRY_ORGANIZATION}/${project.artifactId}</imageName>
+							<baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
 							<entryPoint>["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -Dspring.profiles.active=kubernetes -jar /${project.build.finalName}.jar"]</entryPoint>
 							<resources>
 								<resource>

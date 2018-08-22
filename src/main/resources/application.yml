@@ -10,3 +10,10 @@ spring:
           force-pull: true
           username: DanceSchoolMicroservices
           password: DanceSchool8MS!
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
