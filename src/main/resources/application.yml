@@ -10,6 +10,16 @@ spring:
           force-pull: true
           username: DanceSchoolMicroservices
           password: DanceSchool8MS!
+        health:
+          repositories:
+            check:
+              name: zuulschool
+              profiles: kubernetes
+
+management:
+  endpoint:
+    health:
+      show-details: always
 
 eureka:
   instance:
