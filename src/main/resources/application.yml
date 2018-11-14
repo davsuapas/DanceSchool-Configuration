@@ -19,3 +19,7 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
+
+management:
+  endpoints:
+    web.base-path: /
